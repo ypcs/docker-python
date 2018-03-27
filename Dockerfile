@@ -9,3 +9,4 @@ RUN \
         python3-setuptools \
         python3-wheel && \
     /usr/local/sbin/docker-cleanup
+RUN echo "Source: https://github.com/ypcs/docker-python\nBuild date: $(date +%Y-%m-%d\ %H:%M:%S)" >/README
