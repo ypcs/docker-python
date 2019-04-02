@@ -1,4 +1,4 @@
-FROM ypcs/debian:stretch
+FROM ypcs/debian:buster
 
 RUN \
     /usr/lib/docker-helpers/apt-setup && \
