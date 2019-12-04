@@ -1,4 +1,4 @@
-FROM ypcs/debian:buster
+FROM ypcs/debian:bullseye
 
 RUN \
     /usr/lib/docker-helpers/apt-setup && \
