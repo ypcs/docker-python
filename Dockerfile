@@ -1,6 +1,6 @@
-FROM docker.io/ypcs/debian:bullseye
+FROM docker.io/ypcs/ubuntu:hirsute
 
-RUN \
+RUN sed -i 's/main$/main universe/g' /etc/apt/sources.list && \
     /usr/lib/docker-helpers/apt-setup && \
     /usr/lib/docker-helpers/apt-upgrade && \
     apt-get --assume-yes --no-install-recommends install \
